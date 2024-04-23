@@ -1,0 +1,162 @@
+%======================================================================
+%	A simple and clean CV in LaTeX with minimal dependencies
+%
+%	Author: Andrea Pavan
+%	Date: 16/04/2024
+%======================================================================
+\documentclass[a4paper,10pt]{article}
+\author{Andrea Pavan}
+\usepackage{geometry}
+\geometry{margin=12.5mm}				%set document margins (Word default = 25 mm)
+%\usepackage[default]{roboto}				%set default font for the entire document
+\usepackage[default]{lato}
+\usepackage[sfdefault]{raleway}
+\usepackage{titlesec}
+\usepackage{enumitem}
+
+
+%==========================c
+%	Style and options
+%==========================
+\pagestyle{empty}							%remove page number
+\pdfgentounicode = 1						%make pdf parseable by ATS
+
+\titleformat{\section}{\vspace{-5pt} \scshape \raggedright \large}{}{0em}{}[\titlerule \vspace{-5pt}]
+\newcommand{\fillcell}{@{\extracolsep{\fill}}}		%respect margins
+\setlist[itemize]{leftmargin=10pt}				%fix the layout of the bullet points
+
+
+%==========================
+%	Header
+%==========================
+\begin{document}
+\begin{center}
+	\textbf{\LARGE{\scshape \textsf{Peter Gibbons}}} \\
+	\vspace{2pt}
+	\small{
+	peter.gibbons@initech.com $|$
+	(+xx) 123 456 789 $|$
+	City, Country  $|$
+	Linkedin $|$
+	Github
+	}
+\end{center}
+
+
+%==========================
+%	Summary
+%==========================
+%\iffalse
+\section{\textsf{Summary}}
+Results-driven professional with a proven track record of procrastination, coffee consumption and Netflix binge-watching. Skilled in the art of doing nothing, with expertise in finding creative ways to avoid responsibility. Proficient in Microsoft Office, specifically the "Ctrl+Z" function. Seeking a challenging role that will allow me to perfect my snooze button skills
+%\fi
+
+
+%==========================
+%	Education
+%==========================
+\section{\textsf{Education}}
+\begin{tabular*}{\linewidth}{\fillcell l r \fillcell}
+	\textbf{Some University} & \textit{Sep 2013 -- Sep 2015} \\
+	\textit{Master of Science in Party Engineering -- specialization in playing videogames all day} & City, Country \\
+	\multicolumn{2}{\fillcell l}{Relevant coursework: farting systems, mighty burps dynamics, experimental hangovers}
+\end{tabular*}
+\vspace{2pt} \\
+\begin{tabular*}{\linewidth}{\fillcell l r \fillcell}
+	\textbf{Some University} & \textit{Sep 2010 -- Sep 2013} \\
+	\textit{Bachelor of Science in Burp Engineering} & City, Country
+\end{tabular*}
+
+
+%==========================
+%	Experience
+%==========================
+\section{\textsf{Experience}}
+\begin{tabular*}{\linewidth}{\fillcell l r \fillcell}
+	\textbf{Lead Project Manager} & \textit{Dec 2015 -- Present} \\
+	\textit{Lazypants Inc.} \\
+	\multicolumn{2}{\fillcell p{\textwidth} \fillcell}{
+		\vspace{-15.5pt}
+		\begin{itemize}
+			\setlength{\itemsep}{0.5pt}
+			\setlength{\parskip}{0.5pt}
+			\item Utilized expertise in procrastination to identify new and innovative ways to delay tasks and deadlines, including but not limited to: reorganizing my desk drawers for the 12th time that week, rewatching my favorite TV show for the 5th time in a row, and crafting an intricate spreadsheet to track my productivity (or lack thereof)
+			\item Collaborated with the R\&D team to develop creative excuses for not meeting targets, with a focus on humor and wit
+			\item Developed and refine techniques for appearing busy while accomplishing nothing. Conducted regular "studies" to determine the most effective ways to waste time, and implemented the results into company-wide policies
+			\item Provided expert guidance on the art of doing nothing, including tips on how to stare blankly at a screen, nod off without falling asleep and maintain a convincing appearance of productivity
+		\end{itemize}
+		\vspace{-15.5pt}
+	}
+\end{tabular*} \\
+\begin{tabular*}{\linewidth}{\fillcell l r \fillcell}
+	\textbf{Social Media Guru} & \textit{Oct 2015 -- Nov 2015} \\
+	\textit{Couch Potatoes Inc.} \\
+	\multicolumn{2}{\fillcell p{\textwidth} \fillcell}{
+		\vspace{-15.5pt}
+		\begin{itemize}
+			\setlength{\itemsep}{0.5pt}
+			\setlength{\parskip}{0.5pt}
+			\item Developed a social media strategy that focuses on sharing cat videos, memes and other irrelevant content
+			\item Collaborated with the team to create a social media calendar that is 90\% memes and 10\% actual work-related content
+			\item Provided expert advice on crafting the perfect tweet, including tips on how to use excessive use of emojis and hashtags
+		\end{itemize}
+		\vspace{-15.5pt}
+	}
+\end{tabular*} \\
+\begin{tabular*}{\linewidth}{\fillcell l r \fillcell}
+	\textbf{Undergraduate Research Assistant} & \textit{Feb 2014 -- Jul 2014} \\
+	\textit{Some University} \\
+	\multicolumn{2}{\fillcell p{\textwidth} \fillcell}{
+		\vspace{-15.5pt}
+		\begin{itemize}
+			\setlength{\itemsep}{0.5pt}
+			\setlength{\parskip}{0.5pt}
+			\item Conducted groundbreaking research on the science of burping, focusing on the physics of gas release
+			\item Developed an algorithm to analyze the unique acoustic signature of each burp, including its pitch, tone and resonance, using machine learning to identify patterns and correlations between burp characteristics and their underlying biological and psychological factors
+			\item Utilized expertise in snacking to identify the optimal combinations of junk food that produce the most impressive burps
+			\item Provided crucial support to the team by being an expert in the art of taking long lunches and frequent coffee breaks
+		\end{itemize}
+		\vspace{-15.5pt}
+	}
+\end{tabular*}
+
+
+%==========================
+%	Projects
+%==========================
+%\vspace{-15.5pt}
+\vspace{-5pt}
+\section{\textsf{Projects}}
+\begin{itemize}
+	\setlength{\itemsep}{0.5pt}
+	\setlength{\parskip}{0.5pt}
+	\item Burp-O-Matic: a device that converts burps into musical notes, allowing users to create their own unique soundtracks
+	\item The Procrastination Simulator: a video game that challenges players to complete tasks while being constantly distracted by cat videos and memes.
+	\item The Fusion Frenzy: A working fusion reactor installed in the garage, capable of powering the entire neighborhood and providing endless energy for binge-watching Netflix and playing video games
+	\item Currently working on the Bed-O-Bot 3000: a humanoid robot designed to make the bed, but it appears to be malfunctioning, often covering the user in a blanket and burying them under a pile of pillows
+\end{itemize}
+
+
+%==========================
+%	Skills
+%==========================
+\section{\textsf{Skills}}
+\begin{tabular*}{\linewidth}{\fillcell l l \fillcell}
+	\textbf{\scshape \textsf{Software}} &
+	AutoCAD $|$ MS Office $|$ Photoshop $|$ Ansys Workbench $|$ Simulink $|$ GMAT $|$ OpenFOAM $|$ SolidWorks \\
+
+	\textbf{\scshape \textsf{Programming}} &
+	\emph{\textbf{Experienced:}} Python $|$ Cobol \quad
+	\emph{\textbf{Familiar:}} C/C++ $|$ JavaScript \\
+
+	\textbf{\scshape \textsf{Frameworks}} &
+	PyTorch $|$ Bolt DB $|$ Node.js \\
+
+	\textbf{\scshape \textsf{Languages}} &
+	\emph{\textbf{Native:}} Basque \quad
+	\emph{\textbf{Fluent:}} Korean $|$ Swahili \quad
+	\emph{\textbf{Beginner:}} English (A1)
+\end{tabular*}
+
+
+\end{document}
