@@ -2,7 +2,9 @@
 
 This is a LaTeX template for a simple clean CV, developed from scratch with minimal dependencies. Inspired from [jakegut/resume](https://github.com/jakegut/resume) and [muratcankaracabey/latex_cv](https://github.com/muratcankaracabey/latex_cv).
 
-![Example CV picture](example.jpg)
+<p align="center">
+    <img src="example.jpg" height=70%>
+</p>
 
 How to use
 ----------
@@ -24,8 +26,6 @@ Requirements
 
 * LaTeX compiler (recommended: TeX Live)
 * Font (default: lato, raleway)
-
-On Ubuntu you can just install the packages
 
 License
 -------
