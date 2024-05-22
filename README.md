@@ -1,6 +1,6 @@
 # LaTeX Template for my CV
 
-This is a LaTeX template for a simple clean CV, developed from scratch with minimal dependencies. Inspired from [jakegut/resume](https://github.com/jakegut/resume) and [muratcankaracabey/latex_cv](https://github.com/muratcankaracabey/latex_cv).
+This is a LaTeX template for a simple clean CV, developed from scratch with minimal dependencies. Inspired by the work of [jakegut/resume](https://github.com/jakegut/resume) and [muratcankaracabey/latex_cv](https://github.com/muratcankaracabey/latex_cv).
 
 <p align="center">
     <img src="example.jpg" height=70%>
